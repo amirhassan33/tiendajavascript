@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imagen_nav {
+    width: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "cabeza cabeza cabeza"
+        "aside cuerpo cuerpo"
+        "pie pie pie"
+    ;
+}
+
+.grid__cabeza {
+    grid-area: cabeza;
+}
+
+.grid__cuerpo {
+    grid-area: cuerpo;
+}
+
+.grid__aside {
+    grid-area: aside;
+}
+
+.grid__pie {
+    grid-area: pie;
+}
+
+.grid__aside__principal {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.grid__cuerpo__historia__caja1 {
+    border: 10px;
+    border-style: double;
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.grid__cuerpo__historia__caja2 {
+    border: 10px;
+    border-style: dashed;
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.grid__cuerpo__historia__caja3 {
+    border: 10px;
+    border-style: dotted;
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.grid__cuerpo__historia__caja4 {
+    border: 10px;
+    border-style: groove;
+    padding: 20px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grid__cuerpo__historia__caja5 {
+    border: 10px;
+    border-style: inset;
+    padding: 20px;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.grid__cuerpo__historia__caja6 {
+    border: 10px;
+    border-style: outset;
+    padding: 20px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.grid__cuerpo__historia__caja7 {
+    border: 10px;
+    border-style: ridge;
+    padding: 20px;
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.grid__aside__principal__caja1 {
+    border: 10px;
+    border-style: solid;
+    width: 330px;
+}
+
+.grid__aside__principal__caja1__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja2 {
+    border: 10px;
+    border-style: solid;
+    width: 225px;
+}
+
+.grid__aside__principal__caja2__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja3 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja3__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja4 {
+    border: 10px;
+    border-style: solid;
+    width: 177px;
+}
+
+.grid__aside__principal__caja4__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja5 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja5__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja6 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja6__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja7 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja7__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja8 {
+    border: 10px;
+    border-style: solid;
+    width: 225px;
+}
+
+.grid__aside__principal__caja8__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja9 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja9__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja10 {
+    border: 10px;
+    border-style: solid;
+    width: 225px;
+}
+
+.grid__aside__principal__caja10__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja11 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja11__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja12 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja12__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja13 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja13__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja14 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja14__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja15 {
+    border: 10px;
+    border-style: solid;
+    width: 255px;
+}
+
+.grid__aside__principal__caja15__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja16 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja16__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja17 {
+    border: 10px;
+    border-style: solid;
+    width: 330px;
+}
+
+.grid__aside__principal__caja17__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja18 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja18__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja19 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja19__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja20 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja20__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja21 {
+    border: 10px;
+    border-style: solid;
+    width: 200px;
+}
+
+.grid__aside__principal__caja21__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja22 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja22__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja23 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja23__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja24 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja24__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja25 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja25__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja26 {
+    border: 10px;
+    border-style: solid;
+    width: 375px;
+}
+
+.grid__aside__principal__caja26__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja27 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja27__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja28 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja28__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja29 {
+    border: 10px;
+    border-style: solid;
+    width: 150px;
+}
+
+.grid__aside__principal__caja29__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja30 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja30__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja31 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja31__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja32 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja32__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja33 {
+    border: 10px;
+    border-style: solid;
+    width: 360px;
+}
+
+.grid__aside__principal__caja33__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja34 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja34__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja35 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja35__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja36 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja36__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja37 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja37__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja38 {
+    border: 10px;
+    border-style: solid;
+    width: 195px;
+}
+
+.grid__aside__principal__caja38__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja39 {
+    border: 10px;
+    border-style: solid;
+    width: 375px;
+}
+
+.grid__aside__principal__caja39__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja40 {
+    border: 10px;
+    border-style: solid;
+    width: 240px;
+}
+
+.grid__aside__principal__caja40__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja41 {
+    border: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.grid__aside__principal__caja41__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja42 {
+    border: 10px;
+    border-style: solid;
+    width: 272px;
+}
+
+.grid__aside__principal__caja42__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja43 {
+    border: 10px;
+    border-style: solid;
+    width: 240px;
+}
+
+.grid__aside__principal__caja43__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja44 {
+    border: 10px;
+    border-style: solid;
+    width: 240px;
+}
+
+.grid__aside__principal__caja44__imagen {
+    width: 100%;
+}
+
+.grid__aside__principal__caja45 {
+    border: 10px;
+    border-style: solid;
+    width: 195px;
+}
+
+.grid__aside__principal__caja45__imagen {
+    width: 100%;
+}
+
+.cuerpo {
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(182, 171, 171, 0.74)), url("../img/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pie__caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie__caja__imagen {
+    width: 100px;
+}
+
+.card-text {
+    font-size: x-small;
+}
