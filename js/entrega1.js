@@ -29,7 +29,7 @@ for (let i = 3; i > 0; i--) {
         alert("Ingresaste bien al sistema");
         let opcion = prompt("Elegi que tipo de calculo queres hacer: \nIngresa + para sumar \nIngresa - para restar \nIngresa * para multiplicar \nIngresa / para dividir \nIngresa x para salir");
 
-        while (opcion != "x" && opcion != "X") {
+        while (opcion.toUpperCase() != "X") {
 
             switch (opcion) {
 
