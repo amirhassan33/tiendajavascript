@@ -44,40 +44,44 @@
     </header>
     <main class="cuerpo">
         <section>
-            <form class="row g-3">
+            <form class="margen__formulario row g-3" id="form" action="https://formspree.io/f/xpzbjzpn" method="POST">
                 <div class="col-md-6">
-                    <label for="inputFirstName4" class="form-label">Nombre completo</label>
-                    <input type="text" placeholder="Ingrese su nombre completo" class="form-control"
-                        id="inputFirstName4">
+                    <label for="Nombre_completo" class="form-label">Nombre completo</label>
+                    <input type="text" name="Nombre_completo" placeholder="Ingrese su nombre completo"
+                        class="form-control" id="Nombre_completo">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputLastName4" class="form-label">Apellido</label>
-                    <input type="text" placeholder="Ingrese su apellido" class="form-control" id="inputLastName4">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <input type="text" name="Apellido" placeholder="Ingrese su apellido" class="form-control"
+                        id="Apellido">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Correo electronico</label>
-                    <input type="email" placeholder="Ingrese su correo electronico" class="form-control"
-                        id="inputEmail4">
+                    <label for="Correo_electronico" class="form-label">Correo electronico</label>
+                    <input type="email" name="Correo_electronico" placeholder="Ingrese su correo electronico"
+                        class="form-control" id="Correo_electronico">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">DNI</label>
-                    <input type="number" placeholder="Ingrese su DNI" class="form-control" id="inputPassword4">
+                    <label for="DNI" class="form-label">DNI</label>
+                    <input type="number" name="DNI" placeholder="Ingrese su DNI" class="form-control" id="DNI">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Direccion</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su direccion">
+                    <label for="Direccion" class="form-label">Direccion</label>
+                    <input type="text" name="Direccion" class="form-control" id="Direccion"
+                        placeholder="Ingrese su direccion">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Provincia</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese la provincia">
+                    <label for="Provincia" class="form-label">Provincia</label>
+                    <input type="text" name="Provincia" class="form-control" id="Provincia"
+                        placeholder="Ingrese la provincia">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Localidad</label>
-                    <input type="text" placeholder="Ingresa la localidad" class="form-control" id="inputCity">
+                    <label for="Localidad" class="form-label">Localidad</label>
+                    <input type="text" name="Localidad" placeholder="Ingresa la localidad" class="form-control"
+                        id="Localidad">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">Pais</label>
-                    <select id="inputState" class="form-select">
+                    <label for="Pais" class="form-label">Pais</label>
+                    <select id="Pais" name="Pais" class="form-select">
                         <option selected>Elige el pais</option>
                         <option>Argentina</option>
                         <option>Chile</option>
@@ -87,12 +91,24 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Codigo postal</label>
-                    <input type="text" placeholder="Ingresa el codigo postal" class="form-control" id="inputZip">
+                    <label for="Codigo_postal" class="form-label">Codigo postal</label>
+                    <input type="number" name="Codigo_postal" placeholder="Ingresa el codigo postal"
+                        class="form-control" id="Codigo_postal">
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <button type="reset" class="btn btn-primary">Borrar</button>
+                    <label for="Comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" name="Comentarios" id="Comentarios" rows="7"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="checkbox mb-3">
+                        <input type="checkbox" id="remember_me" value="remember_me">
+                        <label for="remember_me"> I have a bike</label><br>
+                    </div>
+                    <button type="submit" id="boton_enviar_datos" class="btn btn-primary">Enviar</button>
+                    <button type="reset" id="btn_vaciar_local_storage" class="btn btn-primary">Borrar</button>
+                    <button type="reset" id="btn_vaciar_session_storage" class="btn btn-primary">Borrar</button>
+
+                    <p class="warnings" id="warnings"></p>
                 </div>
             </form>
         </section>
@@ -121,7 +137,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <script src="../js/entrega2.js"></script>
+    <script src="../js/validarcontacto.js"></script>
 </body>
 
 </html>
